@@ -1,0 +1,55 @@
+{
+    "@context": "https://w3id.org/codemeta/3.0",
+    "type": "SoftwareSourceCode",
+    "applicationCategory": "IT",
+    "author": [
+        {
+            "id": "_:author_1",
+            "type": "Person",
+            "affiliation": {
+                "type": "Organization",
+                "name": "ETSIINF"
+            },
+            "email": "izan.navarro@alumos.upm.es",
+            "familyName": "Navarro",
+            "givenName": "Izan"
+        },
+        {
+            "type": "Role",
+            "schema:author": "_:author_1",
+            "endDate": "2025-03-05",
+            "roleName": "Developer",
+            "startDate": "2025-02-03"
+        }
+    ],
+    "codeRepository": "https://github.com/Izan-Navarro/Open-Science-and-IA",
+    "dateCreated": "2025-03-05",
+    "dateModified": "2025-03-05",
+    "datePublished": "2025-03-05",
+    "description": "Este proyecto contiene un conjunto de scripts en Python que interactúan con el servicio Grobid para procesar documentos PDF. Los scripts realizan varias tareas, incluyendo la generación de nubes de palabras basadas en los resúmenes (abstracts), el conteo de las figuras en los artículos y la extracción de enlaces del contenido. El proyecto utiliza Docker para la contenedorización y Docker Compose para la orquestación de servicios.",
+    "downloadUrl": "https://github.com/Izan-Navarro/Open-Science-and-IA/archive/refs/tags/v1.0.0.tar.gz",
+    "funder": {
+        "type": "Organization",
+        "name": "ETSIINF"
+    },
+    "identifier": "10.5281/zenodo.14975214",
+    "keywords": [
+        "wordcloud",
+        "figures",
+        "links",
+        "grobid"
+    ],
+    "license": "https://spdx.org/licenses/MIT",
+    "name": "Procesamiento de PDFs con Grobid",
+    "operatingSystem": "Linux",
+    "programmingLanguage": "Python3",
+    "softwareRequirements": "Docker",
+    "version": "1.0.0",
+    "codemeta:contIntegration": {
+        "id": "https://github.com/Izan-Navarro/Open-Science-and-IA"
+    },
+    "continuousIntegration": "https://github.com/Izan-Navarro/Open-Science-and-IA",
+    "developmentStatus": "active",
+    "issueTracker": "https://github.com/Izan-Navarro/Open-Science-and-IA/issues",
+    "referencePublication": "https://doi.org/10.5281/zenodo.14975214"
+}
