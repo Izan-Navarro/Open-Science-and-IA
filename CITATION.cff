@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Si utilizas este código, por favor cita este trabajo utilizando el siguiente formato."
+title: "Procesamiento de PDFs con Grobid"
+authors:
+  - name: "Izan Navarro Nicolás"
+    affiliation: "ETSIINF"
+date-released: "2024-03-05"
+version: "1.0.0"
+repository-code: "https://github.com/Izan-Navarro/Open-Science-and-IA"
+license: "MIT"
+keywords:
+  - Procesamiento de Texto
+  - Ciencia Abierta
+  - Análisis de Documentos
+  - Grobid
+  - Nube de Palabras
+  - Visualización de Datos
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.14975214" 
