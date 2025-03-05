@@ -1,5 +1,0 @@
-requests
-wordcloud
-matplotlib
-nltk
-pytest
