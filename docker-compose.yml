@@ -1,0 +1,32 @@
+
+services:
+  grobid:
+    image: grobid/grobid:0.7.2
+    container_name: grobid
+    ports:
+      - "8070:8070"
+      - "8071:8071"
+    restart: unless-stopped
+
+  app:
+    build: ./app
+    container_name: app
+    depends_on:
+      - grobid
+    volumes:
+      - ./data/papers:/data/papers  # PDFs de entrada
+      - ./data/wordclouds:/data/wordclouds  # Salida de nubes de palabras
+      - ./data/figures:/data/figures  # Salida de la gráfica de figuras
+      - ./data/links:/data/links  # Salida de los enlaces
+    environment:
+      - GROBID_URL=http://grobid:8070
+    command: ["bash", "-c", "python script.py && python figures_script.py && python links_script.py"]
+
+  tests:
+    build: ./app
+    command: ["pytest", "/app/tests"]
+    depends_on:
+      app:
+        condition: service_completed_successfully
+
+
