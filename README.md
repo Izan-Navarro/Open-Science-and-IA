@@ -29,11 +29,17 @@ Para instalar las dependencias de Python, se incluye un archivo `requirements.tx
 1. Clona este repositorio:
 
     ```bash
-    git clone https://github.com/tu-repositorio/pdftools.git
+    git clone https://github.com/Izan-Navarro/Open-Science-and-IA
     cd pdftools
     ```
+2. Descarga e instala Docker:
 
-2. Construye las imágenes Docker utilizando Docker Compose:
+   En el siguiente link puedes descargar Docker Desktop:
+   ```
+   https://www.docker.com/products/docker-desktop/
+   ```
+
+3. Construye las imágenes Docker utilizando Docker Compose:
 
     ```bash
     docker-compose up --build
@@ -41,7 +47,7 @@ Para instalar las dependencias de Python, se incluye un archivo `requirements.tx
 
    Este comando construirá las imágenes Docker necesarias para la aplicación y el servicio Grobid.
 
-3. Asegúrate de tener tus archivos PDF en el directorio `./data/papers/`. El programa buscará los PDFs allí.
+4. Asegúrate de tener tus archivos PDF en el directorio `./data/papers/`. El programa buscará los PDFs allí.
 
 ## Instrucciones de Ejecución
 
